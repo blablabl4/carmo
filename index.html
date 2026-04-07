@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia Carmo | Barbearia por Assinatura em Heliópolis SP</title>
+  <meta name="description" content="Barbearia Carmo - Seu estilo é aqui! Barbearia por assinatura em Heliópolis, São Paulo. Agende pelo app ou telefone (11) 99918-1205. Since 2018.">
+  <meta name="keywords" content="barbearia, heliópolis, são paulo, corte de cabelo, barba, assinatura, barbearia carmo">
+  <meta property="og:title" content="Barbearia Carmo | Since 2018">
+  <meta property="og:description" content="Seu estilo é aqui! Barbearia por assinatura em Heliópolis SP">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo">
+        <img src="assets/logo.png" alt="Barbearia Carmo" id="nav-logo">
+      </a>
+      <div class="navbar-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#horarios">Horários</a>
+        <a href="#" class="nav-cta mobile-only" id="navCta" onclick="openApp(event)">Agendar</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-bg.jpg" alt="Barbearia Carmo Interior">
+    </div>
+    <div class="hero-overlay"></div>
+    <canvas class="hero-fluid" id="fluidCanvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        Since 2018 — Heliópolis SP
+      </div>
+      <img src="assets/logo.png" alt="Barbearia Carmo" class="hero-logo">
+      <p class="hero-tagline">Seu estilo é aqui</p>
+      <p class="hero-subtitle">
+        Barbearia por assinatura em Heliópolis, São Paulo.<br>
+        O melhor corte da região, com profissionais dedicados ao seu estilo.
+      </p>
+      <div class="hero-buttons">
+        <a href="tel:+5511999181205" class="btn btn-primary">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Agendar Agora
+        </a>
+        <a href="#sobre" class="btn btn-outline">
+          Conhecer Mais
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="assets/hero-bg.jpg" alt="Interior Barbearia Carmo">
+        </div>
+        <div class="about-text reveal">
+          <span class="section-label">Sobre Nós</span>
+          <h2>Tradição e <span class="accent-text">Estilo</span> desde 2018</h2>
+          <p>
+            A Barbearia Carmo nasceu em 2018 em Heliópolis, São Paulo, com a missão de oferecer
+            cortes de excelência e uma experiência única para cada cliente. Somos referência na região
+            quando o assunto é estilo e qualidade.
+          </p>
+          <p>
+            Com um sistema exclusivo de <strong>assinatura mensal</strong>, nossos clientes garantem
+            acesso ilimitado aos melhores serviços, sempre com o mesmo padrão de qualidade que nos
+            tornou referência em Heliópolis.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">7+</div>
+              <div class="stat-label">Anos de Experiência</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4</div>
+              <div class="stat-label">Barbeiros</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5★</div>
+              <div class="stat-label">No Google</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section team" id="equipe">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Nossa Equipe</span>
+        <h2 class="section-title">Os Melhores Barbeiros<br>da Região</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <img src="assets/moises.jpg" alt="Moisés - Barbeiro">
+          <div class="team-card-overlay">
+            <div class="team-card-name">Moisés</div>
+            <div class="team-card-role">Barbeiro</div>
+            <a href="https://instagram.com/moises_carmo97" target="_blank" class="team-card-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              @moises_carmo97
+            </a>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <img src="assets/kayky.jpg" alt="Kayky - Barbeiro">
+          <div class="team-card-overlay">
+            <div class="team-card-name">Kayky</div>
+            <div class="team-card-role">Barbeiro</div>
+            <a href="https://instagram.com/kayky_barber_01" target="_blank" class="team-card-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              @kayky_barber_01
+            </a>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <img src="assets/roberthy.jpg" alt="Roberthy - Barbeiro">
+          <div class="team-card-overlay">
+            <div class="team-card-name">Roberthy</div>
+            <div class="team-card-role">Barbeiro</div>
+            <a href="https://instagram.com/roberthym_" target="_blank" class="team-card-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              @roberthym_
+            </a>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <img src="assets/fellipe.jpg" alt="Fellipe - Barbeiro">
+          <div class="team-card-overlay">
+            <div class="team-card-name">Fellipe</div>
+            <div class="team-card-role">Barbeiro</div>
+            <a href="https://instagram.com/fellipe_barber22" target="_blank" class="team-card-instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              @fellipe_barber22
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES / APP ===== -->
+  <section class="section services" id="servicos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Assinatura</span>
+        <h2 class="section-title">Barbearia por<br>Assinatura</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="services-content">
+        <div class="service-features reveal">
+          <div class="feature-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg></div>
+            <div class="feature-text">
+              <h4>Cortes Ilimitados</h4>
+              <p>Assine e tenha cortes ilimitados durante todo o mês com nossos barbeiros.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M4 2v20M8 2v20M4 6h4M4 10h4M4 14h4M4 18h4"/><rect x="12" y="6" width="8" height="12" rx="1"/><line x1="16" y1="10" x2="16" y2="14"/></svg></div>
+            <div class="feature-text">
+              <h4>Barba & Acabamento</h4>
+              <p>Barba modelada, pezinho e acabamento profissional inclusos no plano.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg></div>
+            <div class="feature-text">
+              <h4>Agendamento pelo App</h4>
+              <p>Agende seus horários de forma prática pelo nosso aplicativo exclusivo.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="feature-text">
+              <h4>Atendimento Premium</h4>
+              <p>Ambiente confortável e atendimento de primeira qualidade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="app-download-card reveal">
+          <h3>Baixe Nosso App</h3>
+          <p>Agende seus horários, gerencie sua assinatura e fique por dentro das novidades.</p>
+          <div class="app-buttons">
+            <a href="https://play.google.com/store/apps/details?id=barbeariacarmo.bestbarbers.app" target="_blank" class="app-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+              <div class="app-btn-text">
+                <div class="app-btn-label">Disponível no</div>
+                <div class="app-btn-store">Google Play</div>
+              </div>
+            </a>
+            <a href="https://apps.apple.com/br/app/barbearia-carmo/id6744528195" target="_blank" class="app-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div class="app-btn-text">
+                <div class="app-btn-label">Baixe na</div>
+                <div class="app-btn-store">App Store</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY / INSTAGRAM ===== -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">@barbearia_carmo2018</span>
+        <h2 class="section-title">Nossos Trabalhos</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="gallery-grid reveal">
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="gallery-item">
+          <img src="assets/gallery-1.png" alt="Corte Fade">
+          <div class="gallery-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="gallery-item">
+          <img src="assets/gallery-2.png" alt="Barba">
+          <div class="gallery-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="gallery-item">
+          <img src="assets/gallery-3.png" alt="Pompadour">
+          <div class="gallery-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="gallery-item">
+          <img src="assets/gallery-4.png" alt="Corte na Barbearia">
+          <div class="gallery-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="gallery-item">
+          <img src="assets/gallery-5.png" alt="Skin Fade">
+          <div class="gallery-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="gallery-item">
+          <img src="assets/gallery-6.png" alt="Ferramentas de Barbearia">
+          <div class="gallery-item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="gallery-cta reveal">
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="instagram-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+          Siga-nos no Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="section reviews" id="avaliacoes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Avaliações</span>
+        <h2 class="section-title">O Que Nossos Clientes<br>Dizem</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="review-text">"Barbearia top demais! O atendimento é excelente, os barbeiros são muito profissionais e o ambiente é muito agradável. Sempre saio satisfeito com o corte."</p>
+          <div class="review-author">
+            <div class="review-avatar">L</div>
+            <div>
+              <div class="review-name">Lucas M.</div>
+              <div class="review-source">Google Reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="review-text">"Melhor barbearia da região! Faço a assinatura mensal e vale muito a pena. Os caras são muito habilidosos e o preço é justo. Super recomendo!"</p>
+          <div class="review-author">
+            <div class="review-avatar">R</div>
+            <div>
+              <div class="review-name">Rafael S.</div>
+              <div class="review-source">Google Reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="review-text">"Frequento a Barbearia Carmo desde que abriu. O Moisés e a equipe são demais! O ambiente é muito confortável e o corte sempre fica perfeito."</p>
+          <div class="review-author">
+            <div class="review-avatar">A</div>
+            <div>
+              <div class="review-name">Anderson P.</div>
+              <div class="review-source">Google Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-summary reveal">
+        <div class="reviews-rating">5.0</div>
+        <div class="reviews-count">Avaliação no Google Maps</div>
+        <div class="reviews-actions">
+          <a href="https://maps.app.goo.gl/TYghXbLxZpzMmsJW9" target="_blank" class="reviews-google-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
+            Ver no Google Maps
+          </a>
+          <button class="btn-review" id="openReviewModal" onclick="document.getElementById('reviewModal').classList.add('open')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+              <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+            Deixe sua Avaliação
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCHEDULE & MAP ===== -->
+  <section class="section schedule" id="horarios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Localização & Horários</span>
+        <h2 class="section-title">Quando e Onde<br>nos Encontrar</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="schedule-content">
+        <div class="hours-card reveal">
+          <h3>Horários</h3>
+          <div class="hours-list" id="hoursList">
+            <div class="hours-row" data-day="1">
+              <span class="hours-day">Segunda-feira</span>
+              <span class="hours-time">10:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="2">
+              <span class="hours-day">Terça-feira</span>
+              <span class="hours-time">09:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="3">
+              <span class="hours-day">Quarta-feira</span>
+              <span class="hours-time">09:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="4">
+              <span class="hours-day">Quinta-feira</span>
+              <span class="hours-time">09:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="5">
+              <span class="hours-day">Sexta-feira</span>
+              <span class="hours-time">09:00 – 21:00</span>
+            </div>
+            <div class="hours-row" data-day="6">
+              <span class="hours-day">Sábado</span>
+              <span class="hours-time">08:00 – 20:00</span>
+            </div>
+            <div class="hours-row closed" data-day="0">
+              <span class="hours-day">Domingo</span>
+              <span class="hours-time">Fechado</span>
+            </div>
+          </div>
+        </div>
+        <div class="location-card reveal">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8!2d-46.5937171!3d-23.6112647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c805ab4ffff%3A0x17ba563b6fbee8ba!2sBarbearia%20Carmo!5e0!3m2!1spt-BR!2sbr!4v1712520000000!5m2!1spt-BR!2sbr"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <a href="https://maps.app.goo.gl/TYghXbLxZpzMmsJW9" target="_blank" class="map-overlay-btn">
+            Abrir no Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEW MODAL ===== -->
+  <div class="review-modal-overlay" id="reviewModal">
+    <div class="review-modal">
+      <button class="review-modal-close" onclick="document.getElementById('reviewModal').classList.remove('open')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="review-modal-header">
+        <h3>Avalie a Barbearia Carmo</h3>
+        <p>Sua opinião é muito importante para nós</p>
+      </div>
+      <div class="review-modal-body" id="reviewForm">
+        <div class="review-modal-stars" id="modalStars">
+          <span class="star-select" data-star="1"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <span class="star-select" data-star="2"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <span class="star-select" data-star="3"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <span class="star-select" data-star="4"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+          <span class="star-select" data-star="5"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+        </div>
+        <div class="review-modal-star-label" id="starLabel">Toque nas estrelas para avaliar</div>
+        <div class="review-modal-steps">
+          <div class="review-step">
+            <span class="step-number">1</span>
+            <span>Selecione sua nota acima</span>
+          </div>
+          <div class="review-step">
+            <span class="step-number">2</span>
+            <span>Clique no botão abaixo para abrir o Google</span>
+          </div>
+          <div class="review-step">
+            <span class="step-number">3</span>
+            <span>Publique sua avaliação diretamente no Google Maps</span>
+          </div>
+        </div>
+        <a href="https://maps.app.goo.gl/TYghXbLxZpzMmsJW9" target="_blank" class="review-modal-submit" id="submitReview">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          Avaliar no Google Maps
+        </a>
+        <p class="review-modal-note">A avaliação será publicada diretamente na sua conta Google</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section class="contact-cta" id="contato">
+    <div class="container">
+      <h2 class="reveal">Pronto Para se <span class="accent-text">Transformar</span>?</h2>
+      <p class="reveal">Agende seu horário agora e descubra por que somos a barbearia favorita de Heliópolis.</p>
+      <div class="contact-buttons reveal">
+        <a href="https://wa.me/5511999181205?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20na%20Barbearia%20Carmo" target="_blank" class="btn btn-whatsapp">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp
+        </a>
+        <a href="tel:+5511999181205" class="btn btn-phone">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          (11) 99918-1205
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="#" class="footer-logo">
+        <img src="assets/logo.png" alt="Barbearia Carmo">
+      </a>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/barbearia_carmo2018/" target="_blank" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+        <a href="tel:+5511999181205" class="social-link" aria-label="Telefone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </a>
+        <a href="https://maps.app.goo.gl/TYghXbLxZpzMmsJW9" target="_blank" class="social-link" aria-label="Localização">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2018 – 2026 Barbearia Carmo. Todos os direitos reservados. | Heliópolis, São Paulo – SP</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
